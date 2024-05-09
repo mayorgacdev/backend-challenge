@@ -1,0 +1,20 @@
+﻿
+global using System.Text.Json.Serialization;
+global using Ardalis.Specification;
+global using AutoMapper;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Ardalis.Specification.EntityFrameworkCore;
+global using AutoMapper.QueryableExtensions;
+global using System.Reflection;
+global using ErrorOr;
+global using Technical.Interview.WebApi.Data;
+global using Technical.Interview.WebApi.Responses;
+global using Technical.Interview.WebApi.Common;
+global using Technical.Interview.WebApi.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Technical.Interview.WebApi.Services;
+global using Technical.Interview.WebApi.Extensions;
+global using Technical.Interview.WebApi.Mapping;
+global using Microsoft.AspNetCore.OutputCaching;
+global using Technical.Interview.WebApi.Data.Seed;
