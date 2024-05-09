@@ -28,6 +28,6 @@ public static class SpecificationExtensions
     public static ISpecificationBuilder<MarcasAuto> ByWebsite(this ISpecificationBuilder<MarcasAuto> Builder, string? Website)
         => Website is not null ? Builder.Where(Prop => Prop.SitioWeb.Contains(Website)) : Builder;
 
-    public static ISpecificationBuilder<MarcasAuto> ById(this ISpecificationBuilder<MarcasAuto> Builder, Guid? Id)
-        => Id is not null ? Builder.Where(Prop => Prop.Id.Equals(Id)) : Builder;
+    public static ISpecificationBuilder<MarcasAuto> ById(this ISpecificationBuilder<MarcasAuto> Builder, string? Id)
+        => Id is not null ? Builder.Where(Prop => Prop.Id.Equals(Guid.Parse(Id))) : Builder;
 }
